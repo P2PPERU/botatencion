@@ -1,0 +1,14 @@
+[
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "como estas'",
+    "respuestaBot": "¡Hola! Estoy aquí para ayudarte con cualquier pregunta o duda que tengas sobre póker, bonos, rakeback o cómo mejorar tu juego. ¿En qué puedo asistirte hoy?",
+    "timestamp": "2025-05-14T19:05:07.899Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "cual es el club?",
+    "respuestaBot": "Lo siento, pero sin información adicional no puedo decirte específicamente a qué club te refieres. Sin embargo, puedo ayudarte con información general sobre bonos, rakeback y estrategias para mejorar tu juego de póker en un club. ¿Hay algo específico sobre lo que te gustaría saber más?",
+    "timestamp": "2025-05-14T19:05:30.831Z"
+  }
+]
