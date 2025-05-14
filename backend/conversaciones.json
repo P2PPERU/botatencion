@@ -10,5 +10,23 @@
     "mensajeUsuario": "cual es el club?",
     "respuestaBot": "Lo siento, pero sin información adicional no puedo decirte específicamente a qué club te refieres. Sin embargo, puedo ayudarte con información general sobre bonos, rakeback y estrategias para mejorar tu juego de póker en un club. ¿Hay algo específico sobre lo que te gustaría saber más?",
     "timestamp": "2025-05-14T19:05:30.831Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "cuanto rakeback dan?",
+    "respuestaBot": "¡Hola! El rakeback que ofrecemos comienza en un 30% del rake que generas. Esto significa que si generas 100 soles de rake, te llevarías 30 soles de vuelta. La buena noticia es que este porcentaje puede aumentar hasta un 60% conforme más juegues y generes rake. Además, puedes acumular para maximizar tu rakeback al máximo. ¿Te gustaría saber cómo puedes incrementar tu porcentaje?",
+    "timestamp": "2025-05-14T20:11:56.261Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "cuanto rake dan",
+    "respuestaBot": "¡Hola! El rakeback en PokerProTrack comienza en un 30% del rake que generas. Así que, si generas 100 soles de rake, te llevas 30 soles. Lo mejor es que este porcentaje puede aumentar hasta un 60% a medida que juegas más y generas más rake. Además, puedes acumularlo para maximizar tus ganancias. ¿Te gustaría saber cómo puedes aumentar tu porcentaje de rakeback?",
+    "timestamp": "2025-05-14T20:15:13.440Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "si",
+    "respuestaBot": "¡Hola! ¿Cómo puedo ayudarte hoy? ¿Tienes alguna pregunta sobre póker o necesitas información sobre algo específico? Estoy aquí para lo que necesites. 😊",
+    "timestamp": "2025-05-14T20:15:34.812Z"
   }
 ]

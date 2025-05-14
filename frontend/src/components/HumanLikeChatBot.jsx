@@ -1,6 +1,8 @@
+// frontend/src/components/HumanLikeChatBot.jsx
 import { useEffect, useRef, useState } from 'react';
 import {
-  Box, Input, Button, VStack, Text, Spinner, Flex, useColorModeValue
+  Box, Input, Button, VStack, Text, Spinner, Flex, 
+  useColorModeValue, Avatar, InputGroup, InputRightElement
 } from '@chakra-ui/react';
 
 const HumanLikeChatBot = () => {
@@ -9,17 +11,76 @@ const HumanLikeChatBot = () => {
   ]);
   const [input, setInput] = useState('');
   const [typing, setTyping] = useState(false);
-  const chatBoxRef = useRef();
+  const [typingText, setTypingText] = useState('');
+  const [currentBotMessage, setCurrentBotMessage] = useState('');
+  const [typingSpeed, setTypingSpeed] = useState({ min: 30, max: 70 });
+  const messagesEndRef = useRef();
 
   useEffect(() => {
-    chatBoxRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
+    scrollToBottom();
+  }, [messages, typingText]);
 
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const simulateTyping = (text) => {
+    setTyping(true);
+    setCurrentBotMessage(text);
+    setTypingText('');
+    
+    let i = 0;
+    const maxChars = text.length;
+    
+    const timer = setInterval(() => {
+      if (i < maxChars) {
+        setTypingText(prev => prev + text.charAt(i));
+        i++;
+        
+        // Variación de velocidad sin interrupciones críticas
+        if (i % 5 === 0) {
+          const newSpeed = {
+            min: Math.floor(Math.random() * 20) + 20,
+            max: Math.floor(Math.random() * 30) + 60
+          };
+          setTypingSpeed(newSpeed);
+        }
+        
+        // Solo pausa si no estamos cerca del final
+        if (i % 15 === 0 && Math.random() > 0.7 && i < maxChars - 20) {
+          // Pausa sin recursión
+          clearInterval(timer);
+          setTimeout(() => {
+            // Continuar con el mismo intervalo
+            const newTimer = setInterval(() => {
+              if (i < maxChars) {
+                setTypingText(prev => prev + text.charAt(i));
+                i++;
+              } else {
+                clearInterval(newTimer);
+                setTyping(false);
+                setMessages(prev => [...prev, { sender: 'bot', text }]);
+                setTypingText('');
+              }
+            }, Math.floor(Math.random() * (typingSpeed.max - typingSpeed.min + 1)) + typingSpeed.min);
+          }, 800);
+          return;
+        }
+      } else {
+        clearInterval(timer);
+        setTyping(false);
+        setMessages(prev => [...prev, { sender: 'bot', text }]);
+        setTypingText('');
+      }
+    }, Math.floor(Math.random() * (typingSpeed.max - typingSpeed.min + 1)) + typingSpeed.min);
+  
+    return () => clearInterval(timer);
+  };
   const handleSend = async () => {
     if (!input.trim()) return;
 
     const userMsg = { sender: 'user', text: input };
-    setMessages((prev) => [...prev, userMsg]);
+    setMessages(prev => [...prev, userMsg]);
     setInput('');
     setTyping(true);
 
@@ -33,39 +94,148 @@ const HumanLikeChatBot = () => {
         })
       });
 
-      const data = await response.json();
-      const botMsg = { sender: 'bot', text: data.reply };
+      if (!response.ok) {
+        throw new Error('Error en la respuesta del servidor');
+      }
 
-      setMessages((prev) => [...prev, botMsg]);
+      const data = await response.json();
+      
+      // Simular un retraso como si el bot estuviera "pensando"
+      setTimeout(() => {
+        simulateTyping(data.reply);
+      }, 1000 + Math.random() * 1000); // Entre 1-2 segundos de "pensamiento"
+      
     } catch (error) {
-      setMessages((prev) => [...prev, { sender: 'bot', text: '❌ Error al conectar con el servidor.' }]);
-    } finally {
       setTyping(false);
+      setMessages(prev => [...prev, { 
+        sender: 'bot', 
+        text: '❌ Parece que tengo problemas para comunicarme con el servidor. ¿Podrías intentarlo de nuevo en unos momentos?' 
+      }]);
     }
   };
 
-  const bgColor = useColorModeValue('gray.100', 'gray.800');
+  const getMessageTime = () => {
+    const now = new Date();
+    return `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
+  };
+
+  const bgColor = useColorModeValue('gray.50', 'gray.800');
+  const userBubbleColor = useColorModeValue('blue.100', 'blue.700');
+  const botBubbleColor = useColorModeValue('gray.200', 'gray.700');
 
   return (
-    <Box p={4} bg={bgColor} borderRadius="md" maxW="500px" mx="auto" minH="80vh">
-      <VStack spacing={3} align="stretch">
-        {messages.map((msg, i) => (
-          <Text key={i} align={msg.sender === 'bot' ? 'left' : 'right'}>
-            <strong>{msg.sender === 'bot' ? 'Alexa' : 'Tú'}:</strong> {msg.text}
-          </Text>
-        ))}
-        {typing && (
-          <Flex align="center" gap={2}><Spinner size="sm" /> <Text>Alexa está escribiendo...</Text></Flex>
-        )}
+    <Box 
+      p={4} 
+      bg={bgColor} 
+      borderRadius="lg" 
+      boxShadow="md"
+      maxW="500px" 
+      mx="auto" 
+      minH="80vh"
+      display="flex"
+      flexDirection="column"
+    >
+      <Box 
+        p={2} 
+        bg={useColorModeValue('teal.500', 'teal.600')} 
+        color="white" 
+        borderRadius="md" 
+        mb={4}
+      >
+        <Flex align="center" gap={2}>
+          <Avatar size="sm" name="Alexa" bg="teal.300" />
+          <Text fontWeight="bold">Alexa - Asistente PokerProTrack</Text>
+        </Flex>
+      </Box>
+
+      <Box 
+        flex="1" 
+        overflowY="auto" 
+        mb={4} 
+        css={{
+          '&::-webkit-scrollbar': {
+            width: '8px',
+          },
+          '&::-webkit-scrollbar-track': {
+            width: '10px',
+            background: useColorModeValue('gray.100', 'gray.700'),
+          },
+          '&::-webkit-scrollbar-thumb': {
+            background: useColorModeValue('gray.300', 'gray.600'),
+            borderRadius: '24px',
+          },
+        }}
+      >
+        <VStack spacing={4} align="stretch">
+          {messages.map((msg, i) => (
+            <Flex 
+              key={i} 
+              justify={msg.sender === 'bot' ? 'flex-start' : 'flex-end'}
+            >
+              <Box 
+                maxW="80%" 
+                bg={msg.sender === 'bot' ? botBubbleColor : userBubbleColor}
+                p={3}
+                borderRadius={msg.sender === 'bot' ? "lg 2xl 2xl 0" : "2xl 2xl 0 2xl"}
+                boxShadow="sm"
+              >
+                <Text>{msg.text}</Text>
+                <Text fontSize="xs" color="gray.500" textAlign="right" mt={1}>
+                  {getMessageTime()}
+                </Text>
+              </Box>
+            </Flex>
+          ))}
+          
+          {typing && (
+            <Flex justify="flex-start">
+              <Box 
+                maxW="80%" 
+                bg={botBubbleColor}
+                p={3}
+                borderRadius="lg 2xl 2xl 0"
+                boxShadow="sm"
+              >
+                {typingText ? (
+                  <>
+                    <Text>{typingText}</Text>
+                    <Text fontSize="xs" color="gray.500" textAlign="right" mt={1}>
+                      {getMessageTime()}
+                    </Text>
+                  </>
+                ) : (
+                  <Flex align="center" h="24px">
+                    <Spinner size="xs" mr={2} />
+                    <Text fontSize="sm">Escribiendo</Text>
+                  </Flex>
+                )}
+              </Box>
+            </Flex>
+          )}
+          <div ref={messagesEndRef} />
+        </VStack>
+      </Box>
+
+      <InputGroup size="md">
         <Input
+          pr="4.5rem"
           placeholder="Escribe tu mensaje..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSend()}
         />
-        <Button colorScheme="teal" onClick={handleSend}>Enviar</Button>
-      </VStack>
-      <div ref={chatBoxRef} />
+        <InputRightElement width="4.5rem">
+          <Button 
+            h="1.75rem" 
+            size="sm" 
+            colorScheme="teal"
+            isDisabled={!input.trim() || typing}
+            onClick={handleSend}
+          >
+            Enviar
+          </Button>
+        </InputRightElement>
+      </InputGroup>
     </Box>
   );
 };
