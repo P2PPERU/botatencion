@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Box, Tabs, TabList, TabPanels, Tab, TabPanel, Button } from '@chakra-ui/react';
 import HumanLikeChatBot from './components/HumanLikeChatBot.jsx';
 import FAQManager from './components/FAQManager.jsx';
+import PersonalitySelector from './components/PersonalitySelector.jsx';
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -13,6 +14,7 @@ function App() {
         <TabList>
           <Tab>Chat con Alexa</Tab>
           {isAdmin && <Tab>Gestión de FAQs</Tab>}
+          {isAdmin && <Tab>Configuración de Bot</Tab>}
         </TabList>
         
         <TabPanels>
@@ -23,6 +25,12 @@ function App() {
           {isAdmin && (
             <TabPanel>
               <FAQManager />
+            </TabPanel>
+          )}
+          
+          {isAdmin && (
+            <TabPanel>
+              <PersonalitySelector />
             </TabPanel>
           )}
         </TabPanels>

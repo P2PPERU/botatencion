@@ -28,5 +28,65 @@
     "mensajeUsuario": "si",
     "respuestaBot": "¡Hola! ¿Cómo puedo ayudarte hoy? ¿Tienes alguna pregunta sobre póker o necesitas información sobre algo específico? Estoy aquí para lo que necesites. 😊",
     "timestamp": "2025-05-14T20:15:34.812Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "cuanto rak dan",
+    "respuestaBot": "El rakeback que ofrecemos comienza en un 30% del rake que generas. ¿Te gustaría saber cómo puedes aumentar ese porcentaje hasta un máximo del 60%? ¡Estoy aquí para ayudarte a sacar el máximo provecho de tu rakeback!",
+    "timestamp": "2025-05-14T20:42:51.833Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "si",
+    "respuestaBot": "Para aumentar tu porcentaje de rakeback y llegar al máximo del 60%, te recomendaría jugar regularmente y generar más rake. ¡Así podrás disfrutar de mayores beneficios a medida que participas en más partidas! ¿Hay algo más en lo que pueda ayudarte hoy? ¡Estoy aquí para apoyarte en tu camino en el póker!",
+    "timestamp": "2025-05-14T20:43:07.807Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "hola",
+    "respuestaBot": "¡Hola! ¡Bienvenido de nuevo! ¿En qué puedo ayudarte hoy? ¿Tienes alguna pregunta sobre póker o necesitas consejos para mejorar tu juego? ¡Estoy aquí para brindarte toda la ayuda que necesites! 😊",
+    "timestamp": "2025-05-14T20:45:56.175Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "dan rak?",
+    "respuestaBot": "¡Exacto! En PokerProTrack ofrecemos un sistema de rakeback. Comenzamos con un 30% del rake que generas, y este porcentaje puede aumentar hasta un máximo del 60% a medida que juegas más y generas más rake. ¿Te gustaría saber cómo aprovechar al máximo tu rakeback? ¡Estoy aquí para ayudarte en todo lo que necesites!",
+    "timestamp": "2025-05-14T20:46:11.731Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "si como llego al 60%?",
+    "respuestaBot": "Para alcanzar el 60% de rakeback, necesitas generar un cierto monto de rake a lo largo del mes. Aquí te detallo los pasos:\n- Para el 30% de rakeback, necesitas generar al menos 100 soles de rake.\n- Para el 40% de rakeback, necesitas generar 250 soles de rake.\n- Para el 50% de rakeback, necesitas generar 500 soles de rake.\n- Finalmente, para llegar al máximo del 60% de rakeback, necesitas generar 1000 soles de rake.\nRecuerda que puedes acumular el rake a lo largo del mes y cobrar tu rakeback cuando desees. ¡Así podrás maximizar tus ganancias mientras disfrutas del poker! ¿Te gustaría saber más detalles sobre cómo alcanzar ese 60% de rakeback? ¡Estoy aquí para ayudarte!",
+    "timestamp": "2025-05-14T20:46:33.048Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "y que es el rakeback y el rake?",
+    "respuestaBot": "¡Excelente pregunta! El rake es la comisión que cobra el casino o la plataforma de póker por organizar las partidas. Esta comisión se calcula como un porcentaje de cada bote en efectivo o de la compra de fichas en los torneos.\n\nPor otro lado, el rakeback es un porcentaje del rake que generas que la plataforma te devuelve como jugador. En nuestro caso, comenzamos con un 30% de rakeback y puedes aumentar ese porcentaje hasta un máximo del 60% al generar más rake a lo largo del mes. Es una excelente manera de obtener un retorno de parte de las comisiones que pagas al jugar.\n\n¡Espero que esta explicación haya aclarado tus dudas! ¿Hay algo más que te gustaría saber sobre el rakeback, el rake o cualquier otro tema relacionado con el póker? ¡Estoy aquí para ayudarte!",
+    "timestamp": "2025-05-14T20:47:41.989Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "quien eres?",
+    "respuestaBot": "¡Soy Max, tu asistente virtual del equipo PokerProTrack dirigido por Carlos Pérez! Estoy aquí para ayudarte con todo lo relacionado con el póker: desde consejos para mejorar tu juego hasta explicarte sobre el rakeback y las promociones del club. ¿Hay algo en lo que pueda asistirte hoy? ¡Estoy listo para apoyarte en tu camino en el póker!",
+    "timestamp": "2025-05-14T20:49:01.015Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "quiero habalr con el dueñoo",
+    "respuestaBot": "¡Entiendo tu solicitud! Lamentablemente, en este momento no puedo ponerte en contacto directo con el dueño, Carlos Pérez. Pero, si tienes alguna pregunta específica o necesitas ayuda con algo relacionado con PokerProTrack, ¡estaré encantado de ayudarte en lo que necesites! ¿Hay algo en lo que pueda asistirte o alguna información que desees saber? ¡Estoy aquí para apoyarte en tu experiencia de póker!",
+    "timestamp": "2025-05-14T20:49:53.918Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "quien es el dueño?",
+    "respuestaBot": "El director de PokerProTrack es Alexander García. ¡Es un experto en torneos de póker, estrategia avanzada, gestión de bankroll y psicología del juego! Si necesitas información específica sobre PokerProTrack o tienes alguna pregunta sobre póker, ¡no dudes en decírmelo! Estoy aquí para ayudarte en lo que necesites. ¿Hay algo más en lo que pueda asistirte hoy?",
+    "timestamp": "2025-05-14T20:51:58.572Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "donde se encuentran'",
+    "respuestaBot": "PokerProTrack se encuentra en el mundo virtual del póker en línea. Puedes acceder a nuestro club y disfrutar de las mesas de póker desde la comodidad de tu hogar a través de la aplicación. Si deseas unirte a nuestro club, puedes descargar la aplicación en https://x-poker.net/#/ y registrarte utilizando el ID del club: 1678726 y el ID de referencia: 697874. ¡Te esperamos en las mesas para disfrutar juntos del emocionante mundo del póker! ¿Hay algo más en lo que pueda ayudarte o alguna otra pregunta que tengas sobre PokerProTrack? ¡Estoy aquí para ti!",
+    "timestamp": "2025-05-14T20:54:44.612Z"
   }
 ]
