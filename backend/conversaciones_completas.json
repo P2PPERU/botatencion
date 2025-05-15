@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1747281626817,
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T04:00:26.817Z",
+    "messages": [
+      {
+        "sender": "bot",
+        "text": "¡Hola! Soy Alexa, del equipo PokerProTrack. ¿Te interesa saber más sobre nuestros bonos, rakeback o cómo mejorar tu juego?"
+      },
+      {
+        "sender": "user",
+        "text": "informacion"
+      },
+      {
+        "sender": "bot",
+        "text": "¡Por supuesto! ¿Qué tipo de información específica estás buscando hoy sobre el mundo del póker? ¿Tienes alguna pregunta en mente o un tema en particular que te interese conocer más a fondo? ¡Estoy aquí para proporcionarte toda la información que necesites para potenciar tu pasión por el póker y ayudarte a convertirte en un jugador aún mejor! ¡Dispara tus preguntas y vamos a sumergirnos juntos en este apasionante mundo de las cartas!"
+      },
+      {
+        "sender": "bot",
+        "text": "¡Gracias por chatear con PokerProTrack! Espero haberte ayudado. Si tienes más preguntas, no dudes en iniciar un nuevo chat."
+      }
+    ],
+    "metadata": {
+      "messageCount": 4,
+      "userMessageCount": 1,
+      "botMessageCount": 3
+    }
+  }
+]

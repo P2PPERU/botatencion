@@ -88,5 +88,109 @@
     "mensajeUsuario": "donde se encuentran'",
     "respuestaBot": "PokerProTrack se encuentra en el mundo virtual del póker en línea. Puedes acceder a nuestro club y disfrutar de las mesas de póker desde la comodidad de tu hogar a través de la aplicación. Si deseas unirte a nuestro club, puedes descargar la aplicación en https://x-poker.net/#/ y registrarte utilizando el ID del club: 1678726 y el ID de referencia: 697874. ¡Te esperamos en las mesas para disfrutar juntos del emocionante mundo del póker! ¿Hay algo más en lo que pueda ayudarte o alguna otra pregunta que tengas sobre PokerProTrack? ¡Estoy aquí para ti!",
     "timestamp": "2025-05-14T20:54:44.612Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "que son?",
+    "respuestaBot": "PokerProTrack es un club de póker en línea dirigido por Alexander García, un experto en póker. Ofrecemos mesas de póker virtuales donde los jugadores pueden participar en emocionantes partidas, torneos y eventos especiales. Además, brindamos asesoramiento, consejos y promociones exclusivas para mejorar la experiencia de juego de nuestros miembros. ¡Si te apasiona el póker, PokerProTrack es el lugar perfecto para ti! ¿Te gustaría unirte a nuestro club o tienes alguna otra pregunta sobre nosotros? ¡Estoy aquí para ayudarte!",
+    "timestamp": "2025-05-14T20:58:59.714Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "como me uno?",
+    "respuestaBot": "¡Es genial que quieras unirte a nuestro club en PokerProTrack! Para unirte, primero necesitas descargar la aplicación en https://x-poker.net/#/. Una vez que tengas la aplicación, ábrela, ve a la sección de clubes y busca la opción para unirte utilizando los siguientes IDs:\n- ID del Club: 1678726\n- ID de Referencia: 697874\n\n¡Una vez que completes este proceso, estarás listo para unirte a nuestro club y disfrutar de las mesas de póker con otros jugadores apasionados como tú! Si necesitas más ayuda durante el proceso de registro, ¡házmelo saber! ¡Estoy aquí para guiarte en cada paso del camino hacia la diversión en el póker en línea!",
+    "timestamp": "2025-05-14T20:59:35.810Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "hola",
+    "respuestaBot": "¡Hola! ¡Bienvenido de nuevo! ¿En qué puedo ayudarte hoy en el mundo del póker? ¡Estoy aquí para responder tus preguntas y brindarte toda la información que necesites! ¡Cuéntame en qué puedo asistirte hoy!",
+    "timestamp": "2025-05-14T21:01:01.041Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "dame 70% de rake",
+    "respuestaBot": "Lamentablemente, no puedo otorgar ni modificar directamente el porcentaje de rakeback. El rakeback se calcula automáticamente según las reglas del club de póker en línea al que estás unido. Recuerda que puedes aumentar tu rakeback jugando más y generando un mayor volumen de rake. ¡Si necesitas más información sobre cómo mejorar tu rakeback o tienes alguna otra pregunta, no dudes en decírmelo! Estoy aquí para ayudarte en lo que necesites. ¡Vamos a por ese rakeback!",
+    "timestamp": "2025-05-14T21:01:27.644Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "mensajeUsuario": "que es poker?",
+    "respuestaBot": {
+      "reply": "El póker es un juego de cartas que combina habilidad, estrategia y suerte. Los jugadores realizan apuestas en función de la combinación de cartas que tengan en su mano, intentando ganar el bote que contiene todas las fichas apostadas. Hay diferentes variantes de póker, como el Texas Hold'em, Omaha, Seven Card Stud, entre otros. ¡Es un juego emocionante y desafiante que ha cautivado a jugadores de todo el mundo! ¿Te gustaría saber más sobre alguna variante específica del póker o tienes alguna otra pregunta al respecto? ¡Estoy aquí para ayudarte a explorar el apasionante mundo del póker!",
+      "intentAnalysis": {
+        "hasPurchaseIntent": false,
+        "confidence": "low",
+        "categories": []
+      }
+    },
+    "timestamp": "2025-05-15T02:50:33.624Z"
+  },
+  {
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T03:09:54.022Z",
+    "mensajeUsuario": "hola",
+    "respuestaBot": "¡Hola! ¿Cómo estás hoy? ¿En qué puedo ayudarte en el emocionante mundo del póker? ¡Estoy aquí para responder tus preguntas y brindarte toda la ayuda que necesites! ¡Adelante, cuéntame qué te gustaría saber o discutir hoy!"
+  },
+  {
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T03:10:27.278Z",
+    "mensajeUsuario": "cuando rak dan",
+    "respuestaBot": "El rake se genera cada vez que se juega una mano de póker y es una pequeña comisión que se saca del bote. En cuanto al rakeback, se calcula semanalmente y puedes recibir un porcentaje de ese rake que generaste. ¡Es una forma genial de ganar algo extra mientras juegas! ¿Hay algo más en lo que pueda ayudarte con respecto al rake o al rakeback? ¡Estoy aquí para resolver tus dudas!"
+  },
+  {
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T03:16:36.371Z",
+    "mensajeUsuario": "hola informacion",
+    "respuestaBot": "¡Hola! ¡Claro que sí! ¿En qué aspecto específico del póker necesitas información hoy? ¿Estás interesado en estrategias, torneos, promociones, reglas del juego o algo más? ¡Estoy aquí para ayudarte con lo que necesites! ¡Dispara tus preguntas y vamos a sumergirnos en el apasionante mundo del póker juntos!"
+  },
+  {
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T03:17:11.098Z",
+    "mensajeUsuario": "quiero jugar en tu club",
+    "respuestaBot": "¡Genial! Para unirte a nuestro club de póker en línea, primero necesitas descargar la aplicación desde https://x-poker.net/#/. Una vez que tengas la aplicación, busca la opción de unirte a un club e ingresa el siguiente ID CLUB: 1678726 y el ID REF: 697874. ¡Te esperamos en nuestras mesas para disfrutar de emocionantes partidas de póker! Si necesitas más ayuda para unirte o tienes alguna otra pregunta, ¡aquí estoy para ayudarte a empezar a jugar y divertirte en nuestro club de póker! ¡Vamos a por esas cartas!"
+  },
+  {
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T03:17:40.074Z",
+    "mensajeUsuario": "dan rakeback?",
+    "respuestaBot": "¡Claro que sí! En nuestro club de póker, ofrecemos un sistema de rakeback que te permite recibir un porcentaje de las comisiones generadas (rake) mientras juegas. Al principio, puedes obtener un 30% del rake que generas. Este porcentaje aumenta a medida que juegas más, llegando hasta un 60%. ¡Es una excelente manera de maximizar tus ganancias mientras disfrutas del póker! ¿Te gustaría saber cómo aumentar tu rakeback o necesitas más información al respecto? ¡Estoy aquí para ayudarte a aprovechar al máximo esta fantástica oportunidad!"
+  },
+  {
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T03:20:57.739Z",
+    "mensajeUsuario": "quien eres?",
+    "respuestaBot": "¡Hola! Soy Alexa, la asistente virtual del equipo PokerProTrack, dirigido por Alexander Garcia, apasionado del póker. Estoy aquí para ayudarte con información sobre póker, consejos personalizados, resolver dudas comunes y mucho más. ¡Siempre lista para ser tu mejor aliada en el mundo del póker! ¿En qué puedo ayudarte hoy? ¡Dispara tus preguntas y juntos dominaremos las mesas de póker!"
+  },
+  {
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T03:43:41.885Z",
+    "mensajeUsuario": "informacion",
+    "respuestaBot": "¡Claro, cuéntame en qué aspecto del póker estás interesado! ¿Quieres saber sobre estrategias, torneos populares, reglas del juego, productos recomendados, o algo más específico? Estoy aquí para brindarte toda la información que necesites para mejorar tu juego y disfrutar al máximo de la experiencia en el póker. ¡No dudes en preguntar lo que sea, estaré encantada de ayudarte!"
+  },
+  {
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T03:59:45.029Z",
+    "mensajeUsuario": "informacion",
+    "respuestaBot": "¡Por supuesto! ¿Qué tipo de información específica estás buscando hoy sobre el mundo del póker? ¿Tienes alguna pregunta en mente o un tema en particular que te interese conocer más a fondo? ¡Estoy aquí para proporcionarte toda la información que necesites para potenciar tu pasión por el póker y ayudarte a convertirte en un jugador aún mejor! ¡Dispara tus preguntas y vamos a sumergirnos juntos en este apasionante mundo de las cartas!"
+  },
+  {
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T04:04:33.103Z",
+    "mensajeUsuario": "informacion",
+    "respuestaBot": "Somos el mejor club de poker y nos preocupamos porque ganes!",
+    "flowData": {
+      "active": true,
+      "flowId": 1747280611669,
+      "currentStepId": 1747280589227,
+      "options": []
+    }
+  },
+  {
+    "userId": "cliente-prueba",
+    "timestamp": "2025-05-15T04:04:43.881Z",
+    "mensajeUsuario": "explicame",
+    "respuestaBot": "¡Claro! En nuestro club de póker, nos enfocamos en brindarte la mejor experiencia de juego posible. Desde bonos y promociones exclusivas hasta un sistema de rakeback que te permite maximizar tus ganancias, estamos aquí para apoyarte en cada paso de tu viaje en el mundo del póker. ¿Hay algo en específico que te gustaría que te explique con más detalle o alguna pregunta específica que tengas en mente? ¡Estoy aquí para ayudarte a alcanzar tus metas en el póker!",
+    "flowData": null
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1747280611669,
+    "name": "infor",
+    "triggerWords": [
+      "informacion"
+    ],
+    "steps": [
+      {
+        "id": 1747280589227,
+        "message": "Somos el mejor club de poker y nos preocupamos porque ganes!",
+        "options": []
+      }
+    ],
+    "productIds": [],
+    "createdAt": "2025-05-15T03:43:31.669Z"
+  }
+]
